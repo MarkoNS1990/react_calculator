@@ -10,7 +10,8 @@ const operate = (numberOne, numberTwo, operation) => {
 
     case '-':
       return num1.minus(num2);
-    case '÷':
+
+    case '/':
       return num2 !== '0' ? num1.div(num2) : 'ERROR can\'t divide by 0';
     case 'X':
       return num1.times(num2);
