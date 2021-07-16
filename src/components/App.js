@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-// import calculate from '../logic/calculate';
-
+import calculate from '../logic/calculate';
 
 class App extends Component {
   constructor() {
@@ -40,7 +39,6 @@ class App extends Component {
 
     );
   }
-
-  }
+}
 
 export default App;
