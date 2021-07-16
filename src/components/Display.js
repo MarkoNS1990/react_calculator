@@ -1,19 +1,20 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-function Display({result}) {
-    return (
-        <div>
-            
-        </div>
-    )
+import React from 'react';
+import PropTypes from 'prop-types';
+
+function Display({ result }) {
+  return (
+    <>
+      { result }
+    </>
+  );
 }
 
 Display.defaultProps = {
-    result: 0
-}
+  result: '0',
+};
 
 Display.propTypes = {
-    result: PropTypes.string.isRequired
-}
+  result: PropTypes.string,
+};
 
-export default Display
+export default Display;
