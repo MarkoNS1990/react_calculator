@@ -1,6 +1,6 @@
 import operate from './operate';
 
-export default function calculate(calculatorData, buttonName) {
+const calculate = (calculatorData, buttonName) => {
   let { total, next, operation } = calculatorData;
 
   if (buttonName === '+/-') {
@@ -69,4 +69,6 @@ export default function calculate(calculatorData, buttonName) {
   }
 
   return { total, next, operation };
-}
+};
+
+export default calculate;
