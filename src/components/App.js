@@ -1,12 +1,12 @@
 import '../styles/App.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-import calculate from '../logic/calculate';
+// import calculate from '../logic/calculate';
 
 function App() {
   return (
     <>
-      <Display result={calculate} />
+      <Display result="this will be done in milestone-5" />
       <ButtonPanel />
     </>
   );
