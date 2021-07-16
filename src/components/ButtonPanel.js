@@ -1,35 +1,36 @@
 import React from 'react';
+import Button from './Button';
 
 function ButtonPanel() {
   return (
     <>
       <div className="group-1">
-        <button type="button">AC</button>
-        <button type="button">+/-</button>
-        <button type="button">%</button>
-        <button type="button">÷</button>
+        <Button buttonName="AC" />
+        <Button buttonName="+/-" />
+        <Button buttonName="%" />
+        <Button buttonName="%" />
       </div>
       <div className="group-2">
-        <button type="button">7</button>
-        <button type="button">8</button>
-        <button type="button">9</button>
-        <button type="button">X</button>
+        <Button buttonName="7" />
+        <Button buttonName="8" />
+        <Button buttonName="9" />
+        <Button buttonName="X" />
       </div>
       <div className="group-3">
-        <button type="button">4</button>
-        <button type="button">5</button>
-        <button type="button">6</button>
-        <button type="button">-</button>
+        <Button buttonName="4" />
+        <Button buttonName="5" />
+        <Button buttonName="6" />
+        <Button buttonName="-" />
       </div>
       <div className="group-4">
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button">+</button>
+        <Button buttonName="1" />
+        <Button buttonName="2" />
+        <Button buttonName="3" />
+        <Button buttonName="+" />
         <div className="group-5">
-          <button type="button">0</button>
-          <button type="button">.</button>
-          <button type="button">=</button>
+          <Button buttonName="0" />
+          <Button buttonName="." />
+          <Button buttonName="=" />
         </div>
       </div>
     </>
