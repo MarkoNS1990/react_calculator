@@ -11,6 +11,7 @@ function Button({ buttonName, clickHandler }) {
 
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default Button;

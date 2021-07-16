@@ -30,17 +30,10 @@ const calculate = (calculatorData, buttonName) => {
   }
 
   if (buttonName === '.') {
-    if (!total) {
-      total = '0.';
-    }
-    if (total && operation) {
-      total += '.';
-    }
-    if (total && operation && next) {
+    if (next && !next.includes('.')) {
       next += '.';
-    }
-    if (total && operation && !next) {
-      next = '0.';
+    } else if (total && !total.includes('.')) {
+      total += '.';
     }
   }
   if (['+', 'X', '/', '-'].includes(buttonName)) {

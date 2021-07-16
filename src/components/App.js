@@ -1,4 +1,4 @@
-import React ,{Component} from 'react'
+import React, { Component } from 'react';
 import '../styles/App.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
@@ -12,13 +12,14 @@ class App extends Component {
       next: null,
       operation: null,
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = (buttonName) => {
+  handleClick(buttonName) {
     const calculator = calculate(this.state, buttonName);
-    this.setState({
+    this.setState(
       calculator,
-    });
+    );
   }
 
   render() {
