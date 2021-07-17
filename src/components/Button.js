@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Button({ buttonName, clickHandler }) {
+  const operators = ['+', '-', '/', 'X', '='];
   return (
     <>
-      <button type="button" onClick={() => clickHandler(buttonName)} className="my-button">{buttonName}</button>
+      <button style={operators.includes(buttonName) ? { backgroundColor: 'orange' } : { backgroundColor: '' }} type="button" onClick={() => clickHandler(buttonName)} className={buttonName === '0' ? 'zero' : 'my-button'}>{buttonName}</button>
     </>
   );
 }

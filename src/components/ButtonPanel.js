@@ -31,11 +31,12 @@ function ButtonPanel({ clickHandler }) {
         <Button buttonName="2" clickHandler={handleClick} />
         <Button buttonName="3" clickHandler={handleClick} />
         <Button buttonName="+" clickHandler={handleClick} />
-        <div className="group-5">
-          <Button buttonName="0" clickHandler={handleClick} />
-          <Button buttonName="." clickHandler={handleClick} />
-          <Button buttonName="=" clickHandler={handleClick} />
-        </div>
+
+      </div>
+      <div className="group-5">
+        <Button buttonName="0" clickHandler={handleClick} />
+        <Button buttonName="." clickHandler={handleClick} />
+        <Button buttonName="=" clickHandler={handleClick} />
       </div>
     </div>
   );

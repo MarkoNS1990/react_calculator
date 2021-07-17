@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 function Display({ result }) {
   return (
-    <>
-      <p className="result">{ result || '0' }</p>
-    </>
+
+    <h1 className="result">{ result || '0' }</h1>
+
   );
 }
 
