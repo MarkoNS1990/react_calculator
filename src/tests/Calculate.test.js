@@ -20,7 +20,7 @@ describe('Calculate methods', () => {
     const result = Calculate(test1, 'AC');
     expect(result).toStrictEqual({ next: null, operation: null, total: null });
   });
-  
+
   it('Should return a negative value', () => {
     const result = Calculate({ total: '6', next: '10', operation: '+' }, '=');
     expect(result.total * 1).toEqual(16);
@@ -45,5 +45,4 @@ describe('Calculate methods', () => {
     expect(result.next).toEqual(null);
     expect(result.operation).toEqual('=');
   });
-  
 });
