@@ -13,6 +13,12 @@
   border: 1px solid black;
 }
 
+.zero {
+  width: 50%;
+  font-size: 2rem;
+  border: 1px solid black;
+}
+
 .my-button:hover,
 .zero:hover {
   cursor: pointer;
@@ -42,10 +48,4 @@
 .group-5 {
   height: 100px;
   display: flex;
-}
-
-.zero {
-  width: 50%;
-  font-size: 2rem;
-  border: 1px solid black;
 }
