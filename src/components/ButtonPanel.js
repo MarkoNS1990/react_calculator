@@ -7,7 +7,7 @@ function ButtonPanel({ clickHandler }) {
     clickHandler(buttonName);
   };
   return (
-    <>
+    <div className="button-container">
       <div className="group-1">
         <Button buttonName="AC" clickHandler={handleClick} />
         <Button buttonName="+/-" clickHandler={handleClick} />
@@ -37,7 +37,7 @@ function ButtonPanel({ clickHandler }) {
           <Button buttonName="=" clickHandler={handleClick} />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

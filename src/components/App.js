@@ -20,10 +20,10 @@ function App() {
 
   return (
 
-    <>
+    <div className="container">
       <Display result={(next && next.toString()) || (total && total.toString())} />
       <ButtonPanel clickHandler={handleClick} />
-    </>
+    </div>
   );
 }
 
