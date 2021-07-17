@@ -32,14 +32,12 @@ function App() {
             <Display result={(next && next.toString()) || (total && total.toString())} />
             <ButtonPanel clickHandler={handleClick} />
           </Route>
-        </Switch>
-        <Switch>
+
           <Route exact path="/quote">
             <Quote />
           </Route>
-        </Switch>
-        <Switch exact path="/">
-          <Route>
+
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>
