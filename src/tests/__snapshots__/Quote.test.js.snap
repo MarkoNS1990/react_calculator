@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly to Quote page 1`] = `
+<div>
+  <p>
+    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ad iste, inventore quis eos ut sint quia autem illo dolores eveniet dolorum ea sapiente accusamus, recusandae id cumque aspernatur rem impedit consectetur placeat delectus ipsum eaque. Id, sequi soluta quas, cumque eos aliquid, ipsa nesciunt ad ratione nostrum eum facilis?"
+  </p>
+</div>
+`;
