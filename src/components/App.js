@@ -25,10 +25,12 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
+
       <div className="container">
 
         <Switch>
           <Route exact path="/calculator">
+            <p className="math">Lets do some math!</p>
             <Display result={(next && next.toString()) || (total && total.toString())} />
             <ButtonPanel clickHandler={handleClick} />
           </Route>
