@@ -45,4 +45,12 @@ describe('Calculate methods', () => {
     expect(result.next).toEqual(null);
     expect(result.operation).toEqual('=');
   });
+  it("check '+/-' sign", () => {
+    expect(Calculate({ total: '23', next: null, operation: null }, '+/-').total).toEqual('-23');
+    expect(Calculate({ total: '33', next: '23', operation: '÷' }, '+/-').next).toEqual('-23');
+  });
+  it("check '.' sign", () => {
+    expect(Calculate({ total: '23', next: null, operation: null }, '.').total).toEqual('23.');
+    expect(Calculate({ total: '33', next: '-23', operation: '÷' }, '.').next).toEqual('-23.');
+  });
 });
